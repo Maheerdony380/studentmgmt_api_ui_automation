@@ -1,0 +1,10 @@
+smgmt\pages\TheInternet.class
+smgmt\apiMethods\DeleteStudent.class
+smgmt\apiMethods\AddStudent.class
+smgmt\utils\TestBase.class
+smgmt\apiMethods\UpdateStudent.class
+smgmt\runner\TestRunner.class
+smgmt\stepDefinitions\Hooks.class
+smgmt\stepDefinitions\UI_Steps.class
+smgmt\apiMethods\GetStudent.class
+smgmt\stepDefinitions\API_Steps.class

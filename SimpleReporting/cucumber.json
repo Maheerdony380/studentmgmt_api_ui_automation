@@ -1,0 +1,131 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-11T14:49:59.665Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.NoSuchMethodError: org.slf4j.impl.StaticLoggerBinder.getSingleton()Lorg/slf4j/impl/StaticLoggerBinder;\r\n\tat org.slf4j.LoggerFactory.bind(LoggerFactory.java:150)\r\n\tat org.slf4j.LoggerFactory.performInitialization(LoggerFactory.java:124)\r\n\tat org.slf4j.LoggerFactory.getILoggerFactory(LoggerFactory.java:417)\r\n\tat org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:362)\r\n\tat org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:388)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.\u003cclinit\u003e(WebDriverManager.java:123)\r\n\tat smgmt.utils.TestBase.initDriver(TestBase.java:33)\r\n\tat smgmt.stepDefinitions.Hooks.setup(Hooks.java:12)\r\n",
+              "duration": 13962200,
+              "status": "failed"
+            },
+            "match": {
+              "location": "smgmt.stepDefinitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Login in user module",
+        "description": "",
+        "id": "user-login;login-in-user-module;;2",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat smgmt.stepDefinitions.Hooks.down(Hooks.java:23)\r\n",
+              "duration": 3000591600,
+              "status": "failed"
+            },
+            "match": {
+              "location": "smgmt.stepDefinitions.Hooks.down()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "As a user I Navigate to baseURL",
+            "match": {
+              "location": "smgmt.stepDefinitions.UI_Steps.as_a_user_i_navigate_to_base_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I click on \"Form Authentication\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Form Authentication\"",
+                  "offset": 11
+                }
+              ],
+              "location": "smgmt.stepDefinitions.UI_Steps.i_click_on(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "Login with user \"tomsmith\" and \"SuperSecretPassword!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tomsmith\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"SuperSecretPassword!\"",
+                  "offset": 31
+                }
+              ],
+              "location": "smgmt.stepDefinitions.UI_Steps.login_with_user_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I click on \"Login\" Button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login\"",
+                  "offset": 11
+                }
+              ],
+              "location": "smgmt.stepDefinitions.UI_Steps.i_click_on_button(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I should see \"Secure Area\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Secure Area\"",
+                  "offset": 13
+                }
+              ],
+              "location": "smgmt.stepDefinitions.UI_Steps.i_should_see(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User Login",
+    "description": "",
+    "id": "user-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ui_user.feature",
+    "tags": []
+  }
+]
