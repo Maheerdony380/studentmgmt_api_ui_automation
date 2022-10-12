@@ -14,6 +14,7 @@ API framework test APIs and UI
 - Install **Maven** and Import as Maven project in IntelliJ or Eclipse
 - Install **Lombok** plugin within the IDE (IntelliJ or Eclipse)
 - Add allure’s bin directory to system Path variable.
+- Run studentmgmt-0.0.1-SNAPSHOT.jar for APIs
 
 **Framework Structure:**
 - **_reqquestBody:_** Dynamic request body for APIs
